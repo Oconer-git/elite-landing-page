@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'SfMedium'; /* Use a name you prefer */
+    src: url('@/assets/fonts/SfMedium.OTF') format('opentype'); /* Adjust the path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SfBold'; /* Use a name you prefer */
+    src: url('@/assets/fonts/SfBold.OTF') format('opentype'); /* Adjust the path */
+    font-weight: bold;
+    font-style: bold;
+}
+
+html {
+    font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+.responsive-colors {
+    @apply border-[0.2rem] border-green-600 sm:border-yellow-200 md:border-red-600 lg:border-blue-600 xl:border-pink-400;
+}
+
+/* scroll style ---start--- */
+::-webkit-scrollbar {
+    @apply w-[0.8rem];
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-700;
+}
+/* scroll style ---end--- */
+
+/* carousel style ---start--- */
+:root {
+    --carousel-transition: 300ms;
+    --carousel-opacity-inactive: 0.7;
+    --carousel-opacity-active: 1;
+    --carousel-opacity-near: 0.9;
+}
+
+.carousel__viewport {
+    perspective: 2000px;
+}
+
+.carousel__track {
+    transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+    transition:
+        opacity var(--carousel-transition),
+        transform var(--carousel-transition);
+}
+
+.carousel.is-dragging .carousel__slide {
+    transition:
+        opacity var(--carousel-transition),
+        transform var(--carousel-transition);
+}
+
+.carousel__slide {
+    opacity: var(--carousel-opacity-inactive);
+    transform: translateX(10px) rotateY(-12deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+    opacity: var(--carousel-opacity-near);
+    transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+    opacity: var(--carousel-opacity-active);
+    transform: rotateY(0) scale(0.95);
+}
+
+.carousel__slide--next {
+    opacity: var(--carousel-opacity-near);
+    transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--next ~ .carousel__slide {
+    opacity: var(--carousel-opacity-inactive);
+    transform: translateX(-10px) rotateY(12deg) scale(0.9);
+}
+/* carousel style ---end--- */

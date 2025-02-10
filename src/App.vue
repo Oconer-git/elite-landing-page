@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <HeaderSection/>
+        <HeroSection/>
+        <UpgradeSection/>
+        <FeaturesSection/>
+        <ContactFormSection/>
+        <FooterSection/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import HeaderSection from './sections/HeaderSection.vue';
+    import HeroSection from './sections/HeroSection.vue';
+    import UpgradeSection from './sections/UpgradeSection.vue';
+    import FeaturesSection from './sections/FeaturesSection.vue';
+    import ContactFormSection from './sections/ContactFormSection.vue';
+    import FooterSection from './sections/FooterSection.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            HeaderSection,
+            HeroSection,
+            UpgradeSection,
+            FeaturesSection,
+            ContactFormSection,
+            FooterSection,
+        }
+    }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
