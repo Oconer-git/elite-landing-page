@@ -6,7 +6,6 @@
             <CarouselContainer :name="macs.name" :products="macs.products"/>
             <CarouselContainer :name="iPhones.name" :products="iPhones.products"/>
             <CarouselContainer :name="iPads.name" :products="iPads.products"/>
-
         </div>
     </section>
 </template>

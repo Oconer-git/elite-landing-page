@@ -1,7 +1,8 @@
 <template>
-    <section class="bg-hero bg-cover bg-center bg-no-repeat bg-opacity-20 h-[66rem]">
-        <div class="relative h-full bg-gradient-to-b from-white via-white/90 to-white pt-[8rem] pb-[4rem] z-20">
-            <div class="container font-sfBold flex flex-col h-[60.3rem] w-full z-30 px-[2rem]">
+    <section class="bg-hero bg-cover bg-center bg-no-repeat bg-opacity-20">
+        <!-- for white fade effect -->
+        <div class="relative bg-gradient-to-b from-white via-white/90 to-white z-20"> 
+            <div class="container font-sfBold flex flex-col h-[70rem] w-full  pt-[8rem] pb-[4rem] px-[2rem] z-30">
                 <img src="@/assets/eliteTechLogo.png" alt="logo" class="w-1/2" />
                 <p class="text-[4.8rem]/[5rem] font-bold text-gray-800">Buy your gadgets at </p>
                 <h1 

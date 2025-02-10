@@ -4,7 +4,7 @@
         <Carousel v-bind="carouselConfig">
             <Slide v-for="product in products" :key="product.id">
                 <div class="shadow-md rounded-b-[1rem]">
-                    <img class="rounded-t-[1rem]" :src="product.imageSrc" :alt="product.name" />
+                    <img class="rounded-t-[1rem]" v-bind:src="product.imageSrc" :alt="product.name" />
                     <div class="px-[1rem] py-[0.5rem] bg-gray-200 rounded-b-[1rem]">
                         <p class="font-sfBold text-[1.6rem]/[1.8rem]">{{product.name}}</p>
                         <p class="font-sfMedium text-[1.4rem]/[1.6rem]">{{product.price}}</p>
@@ -19,8 +19,8 @@
 </template>
 
 <script>
-    import 'vue3-carousel/carousel.css'
-    import { Carousel, Slide, Navigation } from 'vue3-carousel'
+    import { Carousel, Navigation, Slide } from 'vue3-carousel';
+import 'vue3-carousel/carousel.css';
     export default {
         name: 'ProductsSection',
         components: {

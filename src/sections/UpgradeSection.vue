@@ -1,5 +1,6 @@
 <template>
     <section :class="[currentWallpaper, 'bg-cover', 'bg-center', 'bg-no-repeat']">
+        <!-- for white fade effect -->
         <div class="relative h-full bg-gradient-to-b from-white/70 via-gray-100/75 to-white/70 py-[8rem] z-20">
             <div class="container flex flex-col h-[70.3rem] w-full z-30">
                 <section class="flex flex-col px-[2rem] space-y-[1rem]">
@@ -17,9 +18,10 @@
 </template>
   
 <script>
-    import { upgradeWallpapers } from '@/data.js';
-    import HeadingText from '@/components/HeadingText.vue'
-    import SubHeadingText from '@/components/SubHeadingText.vue'
+    import HeadingText from '@/components/HeadingText.vue';
+import SubHeadingText from '@/components/SubHeadingText.vue';
+import { upgradeWallpapers } from '@/data.js';
+    
     export default {
         name: 'UpgradeSection',
         data() {
