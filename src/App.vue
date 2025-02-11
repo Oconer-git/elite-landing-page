@@ -1,30 +1,21 @@
 <template>
-        <HeaderSection/>
-        <HeroSection/>
-        <UpgradeSection/>
-        <FeaturesSection/>
-        <ContactFormSection/>
-        <FooterSection/>
+    <HeaderSection/>
+    <main>
+        <router-view/>
+    </main>
+    <FooterSection/>
 </template>
 
 <script>
-    import HeaderSection from './sections/HeaderSection.vue';
-    import HeroSection from './sections/HeroSection.vue';
-    import UpgradeSection from './sections/UpgradeSection.vue';
-    import FeaturesSection from './sections/FeaturesSection.vue';
-    import ContactFormSection from './sections/ContactFormSection.vue';
-    import FooterSection from './sections/FooterSection.vue';
 
-    export default {
-        name: 'App',
-        components: {
-            HeaderSection,
-            HeroSection,
-            UpgradeSection,
-            FeaturesSection,
-            ContactFormSection,
-            FooterSection,
-        }
+import FooterSection from '@/sections/FooterSection.vue';
+import HeaderSection from '@/sections/HeaderSection.vue';
+
+export default {
+    components: {
+        HeaderSection,
+        FooterSection
     }
-</script>
+}
 
+</script>

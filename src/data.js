@@ -1,10 +1,8 @@
 export const bookmarks = [
-    {id: 1 , name: 'Store', bookmark: '#store'},
-    {id: 2 , name: 'Mac', bookmark: '#mac'},
-    {id: 3 , name: 'iPad', bookmark: '#iPad'},
-    {id: 4 , name: 'iPhone', bookmark: '#iPhone'},
-    {id: 5 , name: 'Androids', bookmark: '#androids'},
-    {id: 6 , name: 'Watch', bookmark: '#watch'},
+    {id: 2 , name: 'Mac', bookmark: 'MAC'},
+    {id: 3 , name: 'iPad', bookmark: 'iPad'},
+    {id: 4 , name: 'iPhone', bookmark: 'iPhone'},
+    {id: 6 , name: 'Contacts', bookmark: 'contactUs'},
 ];
 
 export const upgradeWallpapers = [
@@ -27,7 +25,7 @@ export const macs = {
 }
 
 export const iPhones = {
-    name:'iPhones',
+    name:'iPhone',
     products: [
         {id: 1, name: 'iPhone 16', price: '₱69,990', imageSrc: require('@/assets/products/iphone/iphone16.jpg')},
         {id: 2, name: 'iPhone 16 Plus', price: '₱54,990', imageSrc: require('@/assets/products/iphone/iphone16plus.jpg')},
@@ -37,7 +35,7 @@ export const iPhones = {
 }
 
 export const iPads = {
-    name:'iPads',
+    name:'iPad',
     products: [
         {id: 1, name: 'iPad Pro', price: '₱72,990', imageSrc: require('@/assets/products/ipad/ipad air.jpg')},
         {id: 2, name: 'iPad Air', price: '₱42,990', imageSrc: require('@/assets/products/ipad/ipad mini.jpg')},

@@ -1,7 +1,7 @@
 <template>
-    <section class="bg-whitesmoke">
-        <div class="container px-[2rem] py-[8rem]">
-            <HeadingText>Our Products</HeadingText>
+    <section class="bg-whitesmoke scroll-mt-[15rem]">
+        <div class="container px-[2rem] py-[8rem] md:px-[3rem] w-full max-w-[120rem]">
+            <HeadingText>Our Products</HeadingText> 
             <SubHeadingText>Explore. Experience. Elevate.</SubHeadingText>
             <CarouselContainer :name="macs.name" :products="macs.products"/>
             <CarouselContainer :name="iPhones.name" :products="iPhones.products"/>
@@ -11,12 +11,10 @@
 </template>
 
 <script>
-    import HeadingText from '@/components/HeadingText.vue'
-    import SubHeadingText from '@/components/SubHeadingText.vue'
-    import CarouselContainer from '@/components/CarouselContainer.vue'
-    import {macs} from '@/data.js'
-    import {iPhones} from '@/data.js'
-    import {iPads} from '@/data.js'
+import CarouselContainer from '@/components/CarouselContainer.vue';
+import HeadingText from '@/components/HeadingText.vue';
+import SubHeadingText from '@/components/SubHeadingText.vue';
+import { iPads, iPhones, macs } from '@/data.js';
 
     export default {
         name: 'ProductsSection',
