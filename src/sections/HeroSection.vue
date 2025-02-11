@@ -41,7 +41,6 @@
 </template>
 
 <script>
-
 export default {
     name: 'HeroSection',
     data() {
@@ -77,5 +76,4 @@ export default {
         }
     }
 };
-
 </script>
