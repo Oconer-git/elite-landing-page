@@ -18,7 +18,6 @@
 </template>
   
 <script>
-
 import HeadingText from '@/components/HeadingText.vue';
 import SubHeadingText from '@/components/SubHeadingText.vue';
 import { upgradeWallpapers } from '@/data.js';
@@ -51,7 +50,6 @@ export default {
         }
     }
 }
-
 </script>
   
   

@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
 import CarouselContainer from '@/components/CarouselContainer.vue';
 import HeadingText from '@/components/HeadingText.vue';
 import SubHeadingText from '@/components/SubHeadingText.vue';
@@ -40,7 +39,6 @@ export default {
         };
     }
 }
-
 </script>
 
 

@@ -12,7 +12,6 @@
 </template>
 
 <script>
-
 import ContactForm from '@/components/ContactForm.vue';
 import GoogleMap from '@/components/GoogleMap.vue';
 import HeadingText from '@/components/HeadingText.vue';
@@ -27,7 +26,6 @@ export default {
         GoogleMap,
     }
 }
-
 </script>
 
 
