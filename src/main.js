@@ -1,7 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import '@/assets/index.css'
-import router from './router'
+import '@/assets/index.css';
+import Toaster from "@meforma/vue-toaster";
+import router from './router';
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(Toaster).use(router).mount('#app')
+

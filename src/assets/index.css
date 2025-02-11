@@ -96,3 +96,17 @@ html {
     transform: translateX(-10px) rotateY(12deg) scale(0.9);
 }
 /* carousel style ---end--- */
+
+/* carousel toast ---start--- */
+.c-toast {
+    @apply w-[25rem] rounded-[0.4rem] px-4 py-[12rem] pb-2 pt-1 text-center;
+}
+
+.c-toast.c-toast--error {
+    @apply bg-red-700 font-sfMedium text-[1.8rem]/[2rem] text-white;
+}
+
+.c-toast.c-toast--success {
+    @apply bg-green-700 font-sfMedium text-[1.8rem]/[2rem] text-white;
+}
+/* carousel toast ---end--- */

@@ -6,8 +6,8 @@
                 <div class="shadow-md rounded-b-[1rem] mx-[0.2rem]">
                     <img class="rounded-t-[1rem]" v-bind:src="product.imageSrc" :alt="product.name" />
                     <div class="px-[1rem] py-[0.5rem] bg-gray-200 rounded-b-[1rem]">
-                        <p class="font-sfBold text-[1.6rem]/[1.8rem] lg:text-[1.8rem]/[2rem]">{{product.name}}</p>
-                        <p class="font-sfMedium text-[1.4rem]/[1.6rem] lg:text-[1.6rem]/[1.8rem]">{{product.price}}</p>
+                        <p class="font-sfBold text-[1.6rem]/[1.8rem] lg:text-[1.8rem]/[2rem] xl:text-[2rem]/[2.2rem]">{{product.name}}</p>
+                        <p class="font-sfMedium text-[1.4rem]/[1.6rem] lg:text-[1.6rem]/[1.8rem] xl:text-[1.8rem]/[2rem] mt-[0.2rem]">{{product.price}}</p>
                     </div>
                 </div>
             </Slide>
